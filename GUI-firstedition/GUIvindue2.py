@@ -2,6 +2,7 @@
 
 from PyQt6 import QtCore, QtGui, QtWidgets
 from GUIvindue3 import Ui_Vindue3_2
+#from qtwidgets import PasswordEdit
 
 class Ui_Window2_2(object):
     def openWindow(self):
@@ -9,7 +10,6 @@ class Ui_Window2_2(object):
         self.ui = Ui_Vindue3_2()
         self.ui.setupUi(self.window)
         self.window.show()
-
 
 
     def setupUi(self, Window2_2):
@@ -48,10 +48,11 @@ class Ui_Window2_2(object):
         self.lineEdit.setObjectName("lineEdit")
 
         #Password
-        #self.lineEdit_2.setEchoMode(QtWidgets.QLineEdit.Password)
         self.lineEdit_2 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_2.setGeometry(QtCore.QRect(220, 380, 351, 31))
         self.lineEdit_2.setObjectName("lineEdit_2")
+       # print(type(self.lineEdit_2))
+       # self.lineEdit_2.setEchoMode(QtWidgets.QLineEdit.Password)
 
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(180, 470, 491, 41))
